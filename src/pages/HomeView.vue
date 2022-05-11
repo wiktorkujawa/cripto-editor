@@ -2,6 +2,6 @@
 
 <template>
   <main>
-    <TheWelcome />
+    <c-the-welcome />
   </main>
 </template>
