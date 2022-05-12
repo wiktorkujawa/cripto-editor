@@ -3,6 +3,7 @@
     <div class="w-full">
       <h2 class="text-h5 text-center">Editor</h2>
       <textarea
+        id="editor"
         :class="{
           'c-window-editor-block__borders': borders,
           'c-window-editor-textarea__dirty': dirty,
@@ -18,6 +19,7 @@
     <div class="w-full">
       <h2 class="text-h5 text-center">Translation</h2>
       <div
+        id="translation"
         class="c-window-editor-block__borders"
         v-html="content.translation"
       />
