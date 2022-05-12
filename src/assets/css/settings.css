@@ -1,0 +1,7 @@
+:root {
+  --container-padding-inline: 20px;
+  --container-2xl-content-max-width: 1400px; /* 1440px - 2 * 20px */
+  --container-xl-content-max-width: 1224px; /* 1440px - 2 * 108px */
+  --container-lg-content-max-width: 1016px; /* 1440px - 2 * 212px */
+  --container-md-content-max-width: 808px; /* 1440px - 2 * 316px */
+}
