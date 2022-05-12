@@ -1,7 +1,7 @@
 <template>
-  <div class="flex w-full gap-x-4">
+  <div class="md:flex w-full gap-x-4">
     <div class="w-full">
-      <h2 class="text-h2 text-center">Editor</h2>
+      <h2 class="text-h5 text-center">Editor</h2>
       <textarea
         :class="{
           'c-window-editor-block__borders': borders,
@@ -16,7 +16,7 @@
     </div>
 
     <div class="w-full">
-      <h2 class="text-h2 text-center">Translation</h2>
+      <h2 class="text-h5 text-center">Translation</h2>
       <div
         class="c-window-editor-block__borders"
         v-html="content.translation"
@@ -34,6 +34,7 @@ export default {
   },
   data() {
     return {
+      dirty: false,
       editorContent:
         '<h2>In 1998, Wei Dai published a description of "b-money", characterized as an anonymous, distributed electronic cash system.</h2><p>Shortly thereafter, Nick Szabo described bit gold. Like {{ Name/BTC }} and other cryptocurrencies that would follow it, bit gold (not to be confused with the later gold-based exchange, {{ Name/BITGOLD }}) was described as an electronic currency system which required users to complete a proof of work function with solutions being cryptographically put together and published.</p>',
     };
