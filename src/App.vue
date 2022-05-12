@@ -14,7 +14,7 @@
     <RouterView />
   </main>
 
-  <footer>Some footer</footer>
+  <c-footer />
 </template>
 
 <style>
