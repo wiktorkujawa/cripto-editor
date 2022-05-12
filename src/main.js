@@ -4,9 +4,7 @@ import router from "./router";
 
 const app = createApp(App);
 
-const components = import.meta.globEager("./components/*.vue");
-
-console.log(components);
+const components = import.meta.globEager("./components/**/*.vue");
 
 Object.entries(components).forEach(([path, definition]) => {
   const componentName = path
